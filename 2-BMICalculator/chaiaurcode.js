@@ -8,10 +8,10 @@ form.addEventListener('submit',(e)=>{
     const results = document.querySelector('#results');
 
     if(height === "" || height<=0 || isNaN(height)){
-        results.innerHTML=`please enter the valid number ${height}`
+        results.innerHTML=`please enter the valid height ${height}`
     }
     else if(weight === "" || weight<=0 || isNaN(weight)){
-        results.innerHTML=`please enter the valid number ${weight}`
+        results.innerHTML=`please enter the valid weight ${weight}`
     }
     else{
         const bmi = (weight/((height*height)/10000)).toFixed(2)
